@@ -44,6 +44,7 @@
         <a href="order.php">Order</a>
         <a href="orderDetail.php">Order Details</a>
         <a href="signIn.php"><button>Logout</button></a>
+        <a href="paymentDetails.php">payment Details</a>
       </div>
     </div>
     <table>
@@ -72,7 +73,7 @@
                 <td><?php echo $rows['item_id'];?></td>
                 <td><?php echo $rows['name'];?></td>
                 <td><?php echo $rows['unit'];?></td>
-                <td><?php echo "₹".$rows['price'];?></td>
+                <td><?php echo "£".$rows['price'];?></td>
                 <td><img class="thumbnail" id="urlImg" src=" <?php echo $rows['img_link'];?>" alt="" /></td>
                 
                <?php

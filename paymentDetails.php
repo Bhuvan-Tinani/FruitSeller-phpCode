@@ -2,13 +2,7 @@
 
 <?php include 'connection.php';
 
-//   $order_id = "12345";
-//   $customer_id = "12345";
-
-  $orderId = "25";
-  $cusId = "12345";
-  
-  $query = "SELECT * FROM  order_details where order_id = '$orderId' /*AND customer_id = '$cusId'*/ ";
+  $query = "SELECT * FROM  payment_detail";
 
   $execute = mysqli_query($connection,$query);
 
@@ -26,7 +20,7 @@
       href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href=" orderDetails.css" />
+    <link rel="stylesheet" href=" order.css" />
     <link rel="stylesheet" href=" nav.css" />
     <link rel="stylesheet" href=" table.css" />
     <title>Document</title>
@@ -46,51 +40,47 @@
           </div>
         </div>
         <a href="order.php">Order</a>
-        <a href="orderDetail.php" class="active">Order Details</a>
-        <a href="paymentDetails.php">payment Details</a>
+        <a href="orderDetail.php">Order Details</a>
+        <a href="paymentDetails.php" class="active">payment Details</a>
         <a href="signIn.php"><button>Logout</button></a>
       </div>
     </div>
-
-    <h2 class="title">Order Details</h2>
-    <div class="cid"><h3>Customer ID:<?php  echo $orderId; ?></h3></div>
-    <div class="orderID"><h3>Order ID:<?php  echo $orderId; ?></h3></div>
+    <h2 class="title">Payment Details</h2>
     <table>
       <tr>
         <th colspan="100" scope="colgroup" class="tableSearch">
           <input id="search" type="search" placeholder="Search....." />
         </th>
       </tr>
+
       <tr>
-        <th>Item ID</th>
-        <th>Item Price</th>
-        <th>Item Quantity</th>
-        <th>Total Price</th>
+        <th>Payment id</th>
+        <th>Card Holder Name</th>
+        <th>Card Number</th>
+        <th>Expiry Month</th>
+        <th>Expiry Year</th>
+        <th>cvv number</th>
+        <th>order id</th>
+        <th>Amount</th>
       </tr>
 
-
-      <?php
+      <?php   
             while($rows=mysqli_fetch_array($execute))
             {
             ?>
             <tr>
-                <td><?php echo $rows['item_id'];?></td>
-                <td><?php echo "₹".$rows['item_price']."/-";?></td>
-                <td><?php echo $rows['item_quantity'];?></td>
-
-                <?php
-                  $price = (int)$rows['item_price'];
-                  $quantity= (int)$rows['item_quantity'];
-                  $total_price = (int)$price * $quantity;
-                  echo "<td> ";
-                  echo "₹".$total_price."/-";
-                  echo "</td>";
-                ?>
-               
+                <td><?php echo $rows['payment_id'];?></td>
+                <td><?php echo $rows['card_holder_name'];?></td>
+                <td><?php echo $rows['card_no'];?></td>
+                <td><?php echo $rows['expiry_month'];?></td>
+                <td><?php echo $rows['expiry_year'];?></td>
+                <td><?php echo $rows['cvv_no'];?></td>
+                <td><?php echo $rows['order_id'];?></td>
+                <td><?php echo $rows['amt'];?></td>
             </tr>
-            <?php
-            }
-            ?>
-    </table>
-  </body>
-</html> 
+
+        <?php
+        }
+    ?>
+</body>
+</html>

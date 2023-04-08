@@ -41,6 +41,7 @@
         </div>
         <a href="order.php" class="active">Order</a>
         <a href="orderDetail.php">Order Details</a>
+        <a href="paymentDetails.php">payment Details</a>
         <a href="signIn.php"><button>Logout</button></a>
       </div>
     </div>

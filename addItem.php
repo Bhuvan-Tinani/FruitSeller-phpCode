@@ -79,6 +79,7 @@ if (isset($_POST['submit'])) {
         </div>
       </div>
         <a href="order.php">Order</a>
+        <a href="paymentDetails.php">payment Details</a>
         <a href="orderDetail.php">Order Details</a>
 <a href="signIn.php"><button>Logout</button></a>
     </div>

@@ -9,9 +9,9 @@ body {
 }
 .title {
   font-size: 2rem;
-  padding-bottom: 3%;
+  padding-bottom: 2%;
   margin-bottom: 4%;
-  border-bottom: 1px solid black;
+  border-bottom: 5px solid #CBE4F9;
 }
 table {
   border-collapse: collapse;
@@ -30,4 +30,8 @@ th {
 }
 tr:hover {
   background-color: #6777882c;
+}
+
+.titlefont{
+  font-weight: 700;
 }

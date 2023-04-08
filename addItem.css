@@ -3,7 +3,12 @@ body {
   font-family: "Quicksand", sans-serif;
   padding: 0 8%;
 }
-
+.topheading{
+  text-align: center;
+  font-size: 30px;
+  color: #333;
+  background: #fff;
+}
 .active {
   font-weight: 700;
   border: 2px solid white;
@@ -12,9 +17,9 @@ body {
   font-size: 2rem;
   display: block;
   text-align: center;
-  border-bottom: 1px solid black;
+  border-bottom: 5px solid #CBE4F9;
   margin: 3%;
-  padding-top: 2%;
+  padding-top: 1%;
   padding-bottom: 3%;
 }
 .add {
@@ -25,8 +30,8 @@ form {
   /* display: flex; */
 
   flex-direction: column;
-  border: 1px solid black;
-  border-radius: 5px;
+  border: 1px solid #CBE4F9;
+  border-radius: 10px;
   padding-bottom: 1%;
   margin-top: 2%;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
@@ -37,13 +42,13 @@ form input,
 label,
 select {
   display: block;
-  font-size: 1.3rem;
+  font-size: 1.1rem;
 }
 .addItemInput {
   display: flex;
   flex-direction: column;
   margin: 25px;
-  width: 800px;
+  width: 300px;
   justify-content: center;
 }
 .addItemInput label {
@@ -51,32 +56,46 @@ select {
   font-weight: 700;
   font: 1.5;
 }
-input,
-select {
+input, 
+select{
   margin-top: 10px;
-  height: 30px;
-  border: 3px solid gray;
-  border-radius: 5px;
+  height: 40px;
+  width: 270px;
+  border: 3px solid #CBE4F9;
+  border-radius: 10px;
   padding: 8px;
   outline: none;
 }
+
 select {
   height: 50px;
 }
 input:hover {
   color: coralx;
-  border: 3px solid coral;
+  border: 3px solid #CBE4F9;
   /* border-color: white; */
 }
 .addItemBtn {
   background-color: white;
-  padding: 15px 80px;
-  font-size: 1.2rem;
+  padding: 15px 50px;
+  font-size: 1.1rem;
   font-weight: 700;
-  border: 3px solid coral;
+  border: 2px solid #333;
   border-radius: 2rem;
 }
 .addItemBtn:hover {
-  background-color: coral;
-  color: white;
+  background-color: #CBE4F9;
+  color: black;
+}
+
+.titlefont{
+  font-weight: 700;
+}
+.form-part{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  border-radius: 5px;
+  width: 60%;
+  margin: 0% auto;
 }

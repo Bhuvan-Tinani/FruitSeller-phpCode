@@ -6,7 +6,7 @@ body {
   font-family: "Quicksand", sans-serif;
   padding: 1% 8%;
   color: white;
-  background-image: url("1.jpg");
+  background-image: url("static/images/bringbg.jpg");
 
   background-size: 100% 100%;
   background-repeat: no-repeat;
@@ -43,8 +43,11 @@ form input {
   width: auto;
   height: auto;
   padding: 5%;
-  margin: 6% auto;
-  background-color: #ff7f50;
+  
+  width: 500px;
+  height: 400px;
+  margin: 5% 0% 11% 70%;
+  background-color: #333;
   padding: 5px;
   overflow: hidden;
   border-radius: 25px;
@@ -56,9 +59,9 @@ form input {
   color: white;
 }
 #signIn {
-  margin-top: 7%;
-  padding-left: 56px;
-  padding-bottom: 23px;
+  margin-top: 10%;
+  padding-left: 130px;
+  padding-bottom: 0px;
 }
 
 .button-box {
@@ -110,10 +113,10 @@ form input {
   cursor: pointer;
   display: block;
   margin: auto;
-  background-color: white;
+  background-color: #CBE4F9;
   border: 0;
   outline: none;
-  border-radius: 30px;
+  border-radius: 10px;
   font: bold;
   margin-top: 20%;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,

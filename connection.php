@@ -1,7 +1,7 @@
 <?php
 $db_server = "localhost";
 $id = "root";
-$password = "root";
+$password = "1234";
 $db_name = "fruitselling";
 
 // Establish connection

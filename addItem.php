@@ -59,35 +59,47 @@ if (isset($_POST['submit'])) {
     href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap"
     rel="stylesheet"
   />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+   
     <link rel="stylesheet" href=" addItem.css" />
 <link rel="stylesheet" href=" nav.css">
     <link rel="stylesheet" href=" table.css">    <title>Document</title>
   </head>
   <body>
-    <div class="topnav">
-      <div class="logo">Admin</div>
 
-      <div class="navright">
+    <div class="topnav mt-5 navbar navbar-expand-lg">   
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+<div>
+  <p class="topheading">ADMIN PANEL</p>
+      <div class="navright collapse navbar-collapse" id="navbarNav">
         <a href="admin.php" >Dashboard</a>
         <a href="customer.php"> customer</a>
         <div class="dropDown">
           <span class="item">Item</span>
           <div class="dropMenu">
-  
-          <a href="addItem.php" class="active">Add Item</a>
-          <a href="viewItem.php">View Item</a>
+          <a href="addItem.php" style="margin:0px" class="active">Add Item</a>
+          <a href="viewItem.php" style="margin:0px">View Item</a>
         </div>
-      </div>
+        </div>
+      
         <a href="order.php">Order</a>
-        <a href="paymentDetails.php">payment Details</a>
         <a href="orderDetail.php">Order Details</a>
-<a href="signIn.php"><button>Logout</button></a>
+        <a href="paymentDetails.php">payment Details</a>
+
+       <a href="signIn.php"><button>Logout</button></a>
     </div>
     </div>
-    <h1 class="title"> Add Item</h1>
-    <div class="add">
+  </div>
+
+    <h1 class="title titlefont"> Add Item</h1>
+    <div class="add mb-5">
     <form method="post" action ="addItem.php" enctype="multipart/form-data"> 
-      <div class="addItemInput">
+      <div class="form-part">
+    <div class="formpt1">  
+    <div class="addItemInput">
       <label for="itemID"> (PK)Item ID: </label>
       <input
         type="number"
@@ -114,6 +126,8 @@ if (isset($_POST['submit'])) {
         placeholder="Item Unit"
         required
       /> </div>
+  </div>
+      <div class="formpt2">
       <div class="addItemInput">
       <label for="item">Item Price: </label>
       <input
@@ -145,6 +159,8 @@ if (isset($_POST['submit'])) {
      
       
  </div>
+  </div>
+  </div>
       <button name = "submit" type="submit" class="addItemBtn">ADD ITEM</button>
       </div>
     </form>

@@ -7,6 +7,30 @@ body {
   font-weight: 700;
   border: 2px solid white;
 }
+#total-order {
+  background-color: #cfe9fc;
+  color: #fff;
+}
+
+#delivered {
+  background-color: #cff2cf;
+  color: #fff;
+}
+.topheading{
+  text-align: center;
+  font-size: 30px;
+  color: #333;
+  background: #fff;
+}
+#return {
+  background-color: #eed9fc;
+  color: #fff;
+}
+
+#cancelled {
+  background-color: #f5adae;
+  color: #fff;
+}
 .dash {
   display: flex;
   justify-content: center;
@@ -16,7 +40,15 @@ body {
   font-size: 2rem;
   display: block;
   text-align: center;
-  border-bottom: 1px solid black;
+  border-bottom: 5px solid #CBE4F9;
+  margin: 3%;
+  padding-bottom: 1%;
+}
+.dash-title {
+  font-size: 2rem;
+  display: block;
+  text-align: center;
+  border-bottom: 1px solid #333;
   margin: 3%;
   padding-bottom: 3%;
 }
@@ -24,18 +56,29 @@ body {
 .dash-details {
   align-items: left !important;
   width: 150px;
-  height: 150px;
-  border: 1px solid gray;
-  border-radius: 5px;
-  padding: 2%;
+  height: 170px;
+  border: 1px solid #333;
+  border-top-left-radius: 5rem;
+  border-top-right-radius: 5rem;
+  border-bottom-left-radius: 0.5rem;
+  border-bottom-right-radius: 0.5rem;
+
+  padding: 1%;
   margin: 2%;
   padding-top: 0;
+  background: #CBE4F9;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: all 0.2s ease-in-out;
  }
 
 .dash-details:hover {
-  background-color: coral;
-  color: white;
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+  background-color: #CBE4F9;
+  color: #333;
+  transform: translateY(-5px);
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+  font-size: 1.5rem;
+  box-shadow: rgba(50, 50, 93, 0.25) 5px 50px 100px -20px,
   rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
   rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
 
@@ -47,9 +90,12 @@ body {
 .dash-detail-title {
   font-size: 1.2rem;
   font-weight: 700;
+  margin-bottom: 10px;
+  color: #333;
 }
 
 .dash-detail-num {
+  color: #333;
   font-size: 1.2rem;
   font-weight: 600;
 }
@@ -58,23 +104,24 @@ body {
   padding: 2px;
   border-radius: 5px;
   font-size: 1rem;
+  color: #333;
 }
 .earning {
-  display: flex;
+  
   justify-content: space-evenly;
   align-items: center;
   /* border: 1px solid black; */
   border-radius: 5px;
   width: 90%;
   /* height: 400px; */
-  margin: 0% auto;
+  margin: 0% 0% 0% 20%;
 }
 .newItem,
 .bestSeller {
-  border: 1px solid black;
+  border: 2px solid black;
   border-radius: 5px;
-  width: 45%;
-  height: auto;
+  width: 70%;
+  height: 600px;
   margin-top: 3%;
   padding-bottom: 1%;
 
@@ -84,9 +131,9 @@ body {
 }
 .bestSeller h3, .newItem h3{
   padding-bottom: 10px;
-  border-bottom: 1px solid black;
+  border-bottom: 2px solid #CBE4F9;
   color: white;
-  background-color: coral;
+  background-color: #333;
   margin: 0;
   padding: 2% 0;
   margin-bottom: 3%;
@@ -106,7 +153,7 @@ body {
 .earningImg img:hover{
   width: 25%;
   margin: 5px;
-  border: 3px solid gray;
+  border: 3px solid #CBE4F9;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
   rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
   rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;

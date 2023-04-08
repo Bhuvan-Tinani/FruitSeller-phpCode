@@ -7,11 +7,14 @@ body {
   font-weight: 700;
   border: 2px solid white;
 }
+.titlefont{
+  font-weight: 700;
+}
 .title {
-  padding-bottom:3%;
+  padding-bottom:1%;
   margin-bottom: 4%;
   font-size: 2rem;
-  border-bottom: 1px solid black;
+  border-bottom: 5px solid #CBE4F9;
 }
 table {
   border-collapse: collapse;
@@ -30,4 +33,14 @@ th {
 button {
   background-color: transparent;
   border: none;
+}
+.stripcolor{
+  background: #eaf3fa;
+}
+
+.topheading{
+  text-align: center;
+  font-size: 30px;
+  color: #333;
+  background: #fff;
 }

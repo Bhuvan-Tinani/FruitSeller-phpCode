@@ -21,6 +21,9 @@
       href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+   
     <link rel="stylesheet" href=" admin.css" />
     <link rel="stylesheet" href=" nav.css" />
     <link rel="stylesheet" href=" table.css" />
@@ -28,27 +31,33 @@
     <title>Document</title>
   </head>
   <body>
-    <div class="topnav">
-      <div class="logo">Admin</div>
-
-      <div class="navright">
+    <div class="topnav mt-5 navbar navbar-expand-lg">
+      <!-- <div class="logo">Admin</div> -->
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+<div>
+  <p class="topheading">ADMIN PANEL</p>
+      <div class="navright collapse navbar-collapse" id="navbarNav">
         <a href="admin.php">Dashboard</a>
-        <a href="customer.php"> customer</a>
+        <a href="customer.php"> Customer</a>
         <div class="dropDown">
           <span class="item">Item</span>
           <div class="dropMenu">
-            <a href="addItem.php">Add Item</a>
-            <a href="viewItem.php" class="active">View Item</a>
+            <a href="addItem.php" style="margin:0px">Add Item</a>
+            <a href="viewItem.php" style="margin:0px" class="active">View Item</a>
           </div>
-        </div>
+          </div>
+        
         <a href="order.php">Order</a>
         <a href="orderDetail.php">Order Details</a>
+        <a href="paymentDetails.php">Payment Details</a>
         <a href="signIn.php"><button>Logout</button></a>
-        <a href="paymentDetails.php">payment Details</a>
+</div>
       </div>
     </div>
-    <table>
-      <h1 class="title">View Item</h1>
+    <table class="mb-4 table-striped">
+      <h1 class="title titlefont">View Item</h1>
       <tr>
         <th colspan="100" scope="colgroup" class="tableSearch">
           <input id="search" type="search" placeholder="Search....." />
@@ -69,7 +78,7 @@
             while($rows=mysqli_fetch_array($execute))
             {
             ?>
-            <tr>
+            <tr class="stripcolorr">
                 <td><?php echo $rows['item_id'];?></td>
                 <td><?php echo $rows['name'];?></td>
                 <td><?php echo $rows['unit'];?></td>

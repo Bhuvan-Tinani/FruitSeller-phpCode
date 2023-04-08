@@ -6,6 +6,9 @@ body {
   .active {
     font-weight: 700;
     border: 2px solid white;
+    background: #CBE4F9;
+    color: black !important;
+
   }
   table {
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
@@ -21,7 +24,7 @@ body {
     padding: 8px;
   }
   th{
-    background-color: #fac2aece;
+    background-color: #CBE4F9;
   }
   tr:hover{
     background-color: #c9d0d842;
@@ -38,7 +41,10 @@ body {
     font-size: 1.1rem;
   }
   ::placeholder{
-    color: gray;
-    font-weight: 700;
-    font-size: 1.1rem;
+    color: #73787C;
+    font-size: 0.9rem;
   }
+  .stripcolor{
+    background: #eaf3fa;
+  }
+  

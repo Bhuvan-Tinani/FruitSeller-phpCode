@@ -18,8 +18,8 @@ button {
     outline: none;
 }
 .title{
-  border-bottom: 1px solid black;
-  padding-top: 2%;
+  border-bottom: 5px solid #CBE4F9;
+  padding-top: 1%;
   margin-bottom: 4%;
 }
 
@@ -31,4 +31,19 @@ button {
   height: auto;
   display: block;
   z-index: 999;
+}
+
+.stripcolorr{
+  background: #eaf3fa;
+}
+
+.titlefont{
+  font-weight: 700;
+}
+
+.topheading{
+  text-align: center;
+  font-size: 30px;
+  color: #333;
+  background: #fff;
 }

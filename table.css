@@ -1,0 +1,44 @@
+body {
+    text-align: center;
+    font-family: 'Quicksand', sans-serif;
+    padding: 0 8%;
+  }
+  .active {
+    font-weight: 700;
+    border: 2px solid white;
+  }
+  table {
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    border-collapse: collapse;
+    width: 100%;
+    /* border: 2px solid gray; */
+    border-radius: 5px;
+  }
+  
+  td, th {
+    border: 0.5px solid gray;
+    text-align: left;
+    padding: 8px;
+  }
+  th{
+    background-color: #fac2aece;
+  }
+  tr:hover{
+    background-color: #c9d0d842;
+  }
+  .tableSearch{
+      width: 100%;
+
+  }
+  .tableSearch input{
+    background: transparent;
+    border: none;
+    outline: none;
+    width: 100%;
+    font-size: 1.1rem;
+  }
+  ::placeholder{
+    color: gray;
+    font-weight: 700;
+    font-size: 1.1rem;
+  }

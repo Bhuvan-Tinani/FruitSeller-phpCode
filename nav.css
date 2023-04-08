@@ -1,0 +1,102 @@
+body {
+  text-align: center;
+  font-family: "Quicksand", sans-serif;
+  padding: 1% 8%;
+}
+.topnav {
+  overflow: hidden;
+  padding: 3%;
+  background-color: #ff7f50;
+  border-bottom-left-radius: 2rem;
+  border-bottom-right-radius: 2rem;
+  margin-bottom: 3%;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+    rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+
+.logo {
+  float: left;
+  color: white;
+  text-align: center;
+  padding: 10px 8px;
+  font-size: 2rem;
+  font-weight: 700;
+  border-bottom: 2px solid white;
+}
+
+.topnav a {
+  float: left;
+  color: white;
+  text-align: center;
+  padding: 10px 8px;
+  text-decoration: none;
+  font-size: 1.1rem;
+}
+
+.navright {
+  float: right;
+  display: flex;
+}
+.topnav a,
+.navright .item {
+  color: white;
+
+  margin: 5px;
+  border-radius: 5px;
+}
+.navright a:hover,
+.navright .item:hover {
+  font-weight: 700 !important;
+  border: 2px solid white;
+}
+.navright a#active {
+  font-weight: 700;
+}
+.navright a button {
+  color: white;
+  background: transparent;
+  border: none;
+  font-size: 1.1rem;
+}
+.navright a button:hover {
+  background: none;
+  font-weight: 700;
+  /* border: 2px solid white; */
+}
+.dropDown {
+  display: inline-block;
+  /* position:absolute; */
+}
+.dropDown:hover .dropMenu {
+  visibility: visible;
+}
+.dropMenu {
+  visibility: hidden;
+  position: relative;
+  top: 92px;
+}
+.dropMenu a:hover {
+  background-color: coral;
+}
+#item_btn {
+  visibility: visible !important;
+}
+.dropMenu {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  background-color: #fac2aece;
+}
+.dropMenu a {
+  text-decoration: none;
+  /* background-color: white; */
+}
+
+.item {
+  position: relative;
+  top: 15px;
+  right: 0px;
+  padding: 10px 8px;
+  margin: 5px;
+}
